@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p id="prag"></p>
+</body>
+<script>
+    var y=prompt("what is your age?");
+    // y=number(y);
+    var x=document.getElementById("prag").innerHTML=y;
+    var array=["Kapil","Rohit","Raja","Gorav","Rahul"];
+    console.log(array);
+    array.pop();
+    //  console.log(array);
+     array.push("Vishal");
+    //  console.log(array);
+    array.shift();
+    array.unshift("kapil")
+    array.splice(1,1,"Ronit");
+    for(var a=0;a<array.length;a++){
+        console.log(a+": hello "+array[a]);
+    }
+    var line="They are my good friend:";
+    console.log(line);
+    line=line.toUpperCase();
+    console.log(line);
+    var array1=array.slice(0,3);
+    console.log(array1);
+    var num=20;
+    console.log(num);
+    num/=3;
+    console.log(num);
+    num=Math.round(num);
+    console.log(num);
+    num=Math.ceil(num);
+    console.log(num);
+    num=Math.floor(num);
+    console.log(num);
+    var rand=Math.random();
+    console.log(rand);
+    var number=(rand*7)+3;
+    console.log(number);
+    number=Math.floor(number);
+    console.log(number);
+    var text="Hello kapil";
+    // console.log(text);
+    var Newtext=text.replace("kapil","ronit");
+    console.log(Newtext);
+</script>
+</html>
